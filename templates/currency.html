@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <link rel="stylesheet" href="/static/styles/currency.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Relógio</a></li>
+            <li><a href="/templates/tasks.html">Tarefas</a></li>
+            <li><a href="/templates/calculator.html">Calculadora</a></li>
+            <li class="active"><a href="/templates/currency.html">Moedas</a></li>
+        </ul>
+        <button id="theme-toggle">Modo Escuro</button>
+    </nav>
+
+    <main class="currency-container">
+        <h1>Conversor de Moedas</h1>
+        
+        <div class="converter">
+            <div class="loader" id="loader"></div>
+            <div class="input-group">
+                <input type="number" id="amount" value="1" min="0" step="0.01">
+                <select id="from-currency">
+                    <option value="BRL">Real Brasileiro (BRL)</option>
+                    <option value="USD">Dólar Americano (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="GBP">Libra Esterlina (GBP)</option>
+                    <option value="JPY">Iene Japonês (JPY)</option>
+                </select>
+            </div>
+            
+            <div class="swap-btn">
+                <button id="swap">⇄</button>
+            </div>
+            
+            <div class="input-group">
+                <input type="number" id="result" readonly>
+                <select id="to-currency">
+                    <option value="USD">Dólar Americano (USD)</option>
+                    <option value="BRL">Real Brasileiro (BRL)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="GBP">Libra Esterlina (GBP)</option>
+                    <option value="JPY">Iene Japonês (JPY)</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="rate-info" id="rate-info"></div>
+        
+        <div class="last-update" id="last-update"></div>
+    </main>
+
+    <script src="/static/scripts/script.js"></script>
+    <script src="/static/scripts/currency.js"></script>
+</body>
+</html>

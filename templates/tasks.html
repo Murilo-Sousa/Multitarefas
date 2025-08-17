@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <link rel="stylesheet" href="/static/styles/tasks.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Relógio</a></li>
+            <li class="active"><a href="/templates/tasks.html">Tarefas</a></li>
+            <li><a href="/templates/calculator.html">Calculadora</a></li>
+            <li><a href="/templates/currency.html">Moedas</a></li>
+        </ul>
+        <button id="theme-toggle">Modo Escuro</button>
+    </nav>
+
+    <main class="tasks-container">
+        <h1>Lista de Tarefas</h1>
+        
+        <div class="task-input">
+            <input type="text" id="new-task" placeholder="Adicione uma nova tarefa...">
+            <button id="add-task">Adicionar</button>
+        </div>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="pending">Pendentes</button>
+            <button class="filter-btn" data-filter="completed">Concluídas</button>
+        </div>
+        
+        <ul id="task-list"></ul>
+    </main>
+
+    <script src="/static/scripts/script.js"></script>
+    <script src="/static/scripts/tasks.js"></script>
+</body>
+</html>

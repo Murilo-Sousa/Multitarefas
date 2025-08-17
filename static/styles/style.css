@@ -1,0 +1,133 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --hover-color: #000000;
+    --primary-color: #000000;
+    --shadow-color: #0000;
+    --nav-bg: #f5f5f5;
+}
+
+[data-theme="dark"] {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --hover-color: #ffffff;
+    --primary-color: #ffffff;
+    --shadow-color: #0000;
+    --nav-bg: #1e1e1e;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+}
+
+nav {
+    background: var(--nav-bg);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--hover-color);
+    color: var(--bg-color);
+}
+
+nav ul li.active a {
+    background-color: var(--hover-color);
+    color: var(--bg-color);
+    cursor: default;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    padding: 0.5rem 1rem;
+    background: transparent;
+    color: var(--text-color);
+    border: var(--hover-color) solid 3px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+
+#theme-toggle:hover {
+    opacity: 0.9;
+    transform: translateY(-50%) scale(1.05);
+    background-color: var(--hover-color);
+    color: var(--bg-color);
+}
+
+/* Relógio Digital */
+.clock-container {
+    text-align: center;
+    border: var(--primary-color) solid 3px;
+    margin-top: 7rem;
+    padding: 2rem;
+    background: var(--nav-bg);
+    box-shadow: var(--primary-color) 10px 10px 0px 0px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.clock-container h1 {
+    margin-bottom: 1.5rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--primary-color);
+    font-size: 2rem;
+    cursor: default;
+}
+
+#digital-clock {
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: fantasy;
+    margin: 1rem 0;
+    color: var(--text-color);
+    letter-spacing: 5px;
+    cursor: default;
+}
+
+#date {
+    font-size: 1.5rem;
+    font-family: fantasy;
+    color: var(--text-color);
+    opacity: 0.5;
+    margin-top: 0.5rem;
+    cursor: default;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 600px) {
+    #digital-clock {
+        font-size: 3rem;
+    }
+    
+    #date {
+        font-size: 1.2rem;
+    }
+}
