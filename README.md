@@ -54,6 +54,6 @@ Desenvolvido com **HTML, CSS e JavaScript**, focando em **funcionalidade prátic
 
 Clique no botão abaixo para acessar a aplicação online e testar todas as funcionalidades:
 
-[![Acessar Aplicação](https://img.shields.io/badge/🚀_Acessar_Multifunções_Web-4A154B?style=for-the-badge&logo=google-chrome&logoColor=white)](https://multitarefas.onrender.com)
+[![Acessar Aplicação](https://img.shields.io/badge/🚀_Acessar_Multifunções_Web-4A154B?style=for-the-badge&logo=google-chrome&logoColor=white)]()
 
 *Compatível com desktop e dispositivos móveis*
